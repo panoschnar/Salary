@@ -1,0 +1,20 @@
+//1. Μια εταιρία πρόκειται να δώσει αύξηση στους εργαζομένους της
+
+var salary = +prompt("Please give Salary", "1000");
+var rase;
+if (salary <= 1000) {
+  rase = salary + salary * 0.14;
+  console.log(
+    "The employee takes 14% rase and his final salary would be",
+    rase
+  );
+} else if (salary > 1000 && salary <= 1800) {
+  rase = salary + salary * 0.11;
+  console.log(
+    "The employee takes 11% rase and his final salary would be",
+    rase
+  );
+} else {
+  rase = salary + salary * 0.07;
+  console.log("The employee takes 7% rase and his final salary would be", rase);
+}
